@@ -13,8 +13,8 @@ public class ValidadeFormat {
         }
         return cpf;
     }
-    private static String removeSpecialCharacter (String cpf) {
-        return cpf != null ? cpf.replaceAll("[^0-9]", "") : null;
+    private static String removeSpecialCharacter (String texto) {
+        return texto != null ? texto.replaceAll("[^0-9]", "") : null;
     }
 
     private static String cpfStandard (String cpf) {
@@ -23,5 +23,24 @@ public class ValidadeFormat {
 
     public static String cpfFinal (String cpf) {
         return cpfStandard(amountValidCpf(removeSpecialCharacter(cpf)));
+    }
+
+    public static String phoneOrCellPhone (String telefone) {
+        if (telefone.length() == 8){
+            return formatTelefoneFixo(telefone);
+        }else if (telefone.length() == 9){
+            return formatCelular(telefone);
+        } else {
+            throw new IllegalArgumentException("Numero invalido !");
+        }
+    }
+
+    public static String formatCelular(String fone){
+
+        return null;
+    }
+
+    public static String formatTelefoneFixo(String fone){
+        return null;
     }
 }
