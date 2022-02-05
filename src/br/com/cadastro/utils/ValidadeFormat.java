@@ -21,26 +21,14 @@ public class ValidadeFormat {
         return cpf.substring(0,3) + "." + cpf.substring(3,6) +  "." + cpf.substring(6,9) +  "-" + cpf.substring(9, cpf.length());
     }
 
+
+    public static String foneStandartTelephone (String telefone){
+        return telefone.substring(0, telefone.length()-4)+ "-" + telefone.substring(telefone.length()-4) ;
+    }
+
+
     public static String cpfFinal (String cpf) {
         return cpfStandard(amountValidCpf(removeSpecialCharacter(cpf)));
     }
 
-    public static String phoneOrCellPhone (String telefone) {
-        if (telefone.length() == 8){
-            return formatTelefoneFixo(telefone);
-        }else if (telefone.length() == 9){
-            return formatCelular(telefone);
-        } else {
-            throw new IllegalArgumentException("Numero invalido !");
-        }
-    }
-
-    public static String formatCelular(String fone){
-
-        return null;
-    }
-
-    public static String formatTelefoneFixo(String fone){
-        return null;
-    }
 }

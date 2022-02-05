@@ -55,8 +55,8 @@ public class Clientes {
         return "Clientes{" +
                 "Nome: '" + nomeCompleto + '\'' +
                 ", CPF: " + ValidadeFormat.cpfFinal(cpf) +
-                ", ddd='" + ddd + '\'' +
-                ", Telefone: " + telefone +
+                ", Telefone: " +"("+ ddd +") "+ ValidadeFormat.foneStandartTelephone(telefone)+
                 '}';
     }
+
 }
