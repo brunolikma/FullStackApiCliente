@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class BaseDAO {
     Connection conn = null;
-    String url = "jdbc:mariadb://localhost:3306/sequence";
+    String url = "jdbc:mariadb://localhost:3306/brunodb";
     String user = "root";
     String senha = "";
 

@@ -11,7 +11,7 @@ public class ClientesDAO extends BaseDAO {
 
     public void inserir(Clientes cli){
         conn = getConnection();
-        String sql = "insert into Pessoa (nome, cpf,ddd,telefone) value (?,?,?,?)";
+        String sql = "insert into clientes (nome, cpf,ddd,telefone) value (?,?,?,?)";
         PreparedStatement ptst;
         try {
             ptst=conn.prepareStatement(sql);

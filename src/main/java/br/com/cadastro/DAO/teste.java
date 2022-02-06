@@ -12,9 +12,9 @@ public class teste {
 
         Clientes cliente = new Clientes();
         cliente.setNomeCompleto("Bruno Lima de Santana");
-        cliente.setCpf("327.856.378-60");
+        cliente.setCpf("327.585.333-60");
         cliente.setDdd("13");
-        cliente.setTelefone("98173-1755");
+        cliente.setTelefone("98173-1756");
         dao1.inserir(cliente);
 
 
