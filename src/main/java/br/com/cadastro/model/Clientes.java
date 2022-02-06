@@ -1,4 +1,4 @@
-package br.com.cadastro;
+package br.com.cadastro.model;
 
 import br.com.cadastro.utils.ValidadeFormat;
 

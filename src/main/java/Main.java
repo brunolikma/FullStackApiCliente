@@ -1,5 +1,4 @@
-import br.com.cadastro.Clientes;
-import br.com.cadastro.utils.ValidadeFormat;
+import br.com.cadastro.model.Clientes;
 
 public class Main {
     public static void main(String[] args) {
