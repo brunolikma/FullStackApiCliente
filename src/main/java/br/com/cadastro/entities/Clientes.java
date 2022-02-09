@@ -11,7 +11,7 @@ public class Clientes {
     private Integer id;
 
     @Column(name="nome")
-    private String firstname;
+    private String nome;
 
     @Column(name="cpf")
     private String cpf;
@@ -32,12 +32,12 @@ public class Clientes {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getNome() {
+        return nome;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCpf() {
